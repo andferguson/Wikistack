@@ -35,7 +35,7 @@ module.exports = () => layout(html`
     </div>
 
     <div>
-    <label for="status" class="col-sm-2 control-label">Status</label>
+    <label for="status" class="col-sm-2 control-label">Status (open/closed)</label>
       <div class="col-sm-10">
         <input id="status" name="status" type="text" class="form-control"/>
       </div>

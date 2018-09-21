@@ -18,8 +18,8 @@ app.use(express.static(__dirname + "/public"));
 
 app.use(express.urlencoded({ extended: false }));
 
-app.get("/", (req, res) => {
-  res.send(main(""));
+app.get("/", async (req, res) => {
+  res.send(main(await Page.findAll()));
 });
 
 app.use("/wiki", wikiRouter);
