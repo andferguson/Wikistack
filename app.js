@@ -13,9 +13,7 @@ db.authenticate().then(() => {
 });
 
 app.use(morgan("dev"));
-
 app.use(express.static(__dirname + "/public"));
-
 app.use(express.urlencoded({ extended: false }));
 
 app.get("/", async (req, res) => {
